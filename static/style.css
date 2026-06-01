@@ -17,8 +17,8 @@
 
 :root {
   /* Core palette */
-  --bg: #282c34;
-  --fg: #9cdef2;
+  --bg: #020202;
+  --fg: #30c0e2;
   --panel: #111;
   --border: #355a66;
   --red: #e06c75;
@@ -27,6 +27,7 @@
      (or, for sites with no fallback, painted as transparent/inherit).
      Anchor them to real hex so the token layer actually works. */
   --green: #50fa7b;
+  --blue: #30c0e2;
   --warn: #f0ad4e;
 
   /* Syntax highlighting */
@@ -51,7 +52,7 @@
   --color-recording-hover: #d63031;
   --color-muted: #888;
   --color-muted-alt: #6b7280;
-  --color-accent: #00aaff;
+  --color-accent: #30c0e2;
   --color-agent-active: #00ff00;
   --color-brand-blue: #3b82f6;
   --color-blind-orange: #ff9800;
@@ -61,6 +62,7 @@
   /* Warm accent — used by the Goals/Today UI in Notes. Lives as a token so
      themes can override without touching the goal CSS. */
   --accent-warm: #d19a66;
+  --blue: #30c0e2;
 }
 
 :root.light {
@@ -546,7 +548,7 @@ body.bg-pattern-sparkles {
     .sidebar-brand-title {
       font-size: 1rem;
       font-weight: 600;
-      color: var(--brand-color, var(--red));
+      color: var(--blue);
       white-space: nowrap;
       user-select: none;
       position: relative;
@@ -676,7 +678,7 @@ body.bg-pattern-sparkles {
       height: 34px;
       border: none;
       background: transparent;
-      color: var(--accent, var(--red));
+      color: #ffffff;
       font-size: 16px;
       border-radius: 6px;
       cursor: pointer;
@@ -1773,7 +1775,7 @@ body.bg-pattern-sparkles {
     #welcome-screen .welcome-name {
       font-size:2.2rem;
       font-weight:700;
-      background: linear-gradient(135deg, var(--brand-color, var(--red)), color-mix(in srgb, var(--brand-color, var(--red)) 60%, var(--fg)));
+      background: linear-gradient(135deg, var(--blue), color-mix(in srgb, var(--blue) 60%, var(--fg)));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -1785,7 +1787,7 @@ body.bg-pattern-sparkles {
       height: 1.8rem;
       margin-right: 0.4rem;
       vertical-align: -0.15em;
-      color: var(--brand-color, var(--red));
+      color: var(--blue);
     }
     #welcome-screen .welcome-sub {
       font-size:0.85rem;

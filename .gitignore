@@ -81,3 +81,6 @@ dev-docs/
 compound.config.json
 *.error.log
 _scratch/
+
+# Claude
+CLAUDE.md

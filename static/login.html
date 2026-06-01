@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, interactive-widget=resizes-visual">
-<title>Odysseus — Login</title>
+<title>Anubis Login</title>
 <script nonce="{{CSP_NONCE}}">
 (function(){
   // Per-theme bg-effect defaults — mirrors THEME_DEFAULT_* maps in
@@ -41,7 +41,7 @@
         aiBubbleBg:      '--ai-bubble-bg',
         bubbleBorder:    '--bubble-border',
         sidebarBg:       '--sidebar-bg',
-        brandColor:      '--brand-color',
+        brandColor:      '--blue',
         hamburgerColor:  '--hamburger-color',
         inputBg:         '--input-bg',
         inputBorder:     '--input-border',
@@ -137,7 +137,7 @@
     /* Same gradient as the main app's welcome-screen "Odysseus" title
        (static/style.css #welcome-screen .welcome-name) so the brand
        wordmark is consistent across login + first-launch screens. */
-    background: linear-gradient(135deg, var(--brand-color, var(--red)), color-mix(in srgb, var(--brand-color, var(--red)) 60%, var(--fg)));
+    background: linear-gradient(135deg, var(--blue), color-mix(in srgb, var(--blue) 60%, var(--fg)));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -161,7 +161,7 @@
   }
   button:hover { background: color-mix(in srgb, var(--red) 85%, black); }
   button:disabled { opacity: 0.5; cursor: not-allowed; }
-  .error { color: #e55; font-size: 0.85rem; margin-bottom: 0.75rem; display: none; }
+  .error { color: rgb(61, 194, 209); font-size: 0.85rem; margin-bottom: 0.75rem; display: none; }
   .toggle { text-align: center; margin-top: calc(1rem + 4px); font-size: 0.85rem; color: color-mix(in srgb, var(--fg) 50%, transparent); }
   .toggle a { color: var(--red); cursor: pointer; text-decoration: none; }
   .toggle a:hover { text-decoration: underline; }

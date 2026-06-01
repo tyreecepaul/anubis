@@ -1,14 +1,5 @@
 # Acknowledgments
 
-Odysseus stands on the shoulders of a lot of open-source work. This file
-credits the projects whose code, assets, or designs are included in or
-adapted by this repository, and notes their licenses.
-
-If you believe something here is mis-attributed or missing, please open an
-issue — it will be corrected promptly.
-
----
-
 ## Adapted / borrowed code
 
 Portions of this project were adapted from other open-source repositories.
